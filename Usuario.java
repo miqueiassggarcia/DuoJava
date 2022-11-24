@@ -1,9 +1,13 @@
+import objects.Jogos;
+import objects.Notificacoes;
+import objects.Tags;
+
 public class Usuario {
   private String nome;
   private String sexo;
   private String email;
   private String urlImagem;
-  private Notificacao notificacao;
+  private Notificacoes notificacao;
   private Tags tags;
   private Jogos jogos;
 
