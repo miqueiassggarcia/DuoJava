@@ -42,6 +42,4 @@ public class Jogos {
   public void setPosts(ArrayList<Posts> posts) {
     this.posts = posts;
   }
-
-  
 }
