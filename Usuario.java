@@ -7,7 +7,7 @@ public class Usuario {
   private String sexo;
   private String email;
   private String urlImagem;
-  private Notificacoes notificacao;
+  private Notificacoes notificacoes;
   private Tags tags;
   private Jogos jogos;
 
@@ -16,23 +16,23 @@ public class Usuario {
     this.sexo = sexo;
     this.email = email;
     this.urlImagem = "";
-    this.notificacao = new Notificacao;
-    this.tags = new Tags;
-    this.jogos = new Jogos;
+    this.notificacoes = new Notificacoes();
+    this.tags = new Tags();
+    this.jogos = new Jogos();
   }
 
-  private String verificarLogin(String email, String senha) {
+  //private String verificarLogin(String email, String senha) {
     //hash: string = "query no banco de dados";
     //return senha.encrypt() = hash;
-  }
+  //}
 
-  public boolean criarNovoUsuario(String senha) {
+  //public boolean criarNovoUsuario(String senha) {
     //queryNoBando(email, senha)
-  }
+  //}
   
-  public boolean adicionarDadosUsuario() {
+  //public boolean adicionarDadosUsuario() {
     //queryNoBando("dados do objeto");
-  }
+  //}
   
   public String getnome() {
     return this.nome;

@@ -16,4 +16,24 @@ public class Notificacoes {
       
     }
   }
+
+  public Date getData() {
+    return this.data;
+  }
+  public String getDescricao() {
+    return this.descricao;
+  }
+  public boolean getVisualizado() {
+    return this.visualizado;
+  }
+
+  public void setData(Date data) {
+    this.data = data;
+  }
+  public void setDescricao(String descricao) {
+    this.descricao = descricao;
+  }
+  public void setVisualizado(boolean visualizado) {
+    this.visualizado = visualizado;
+  }
 }
