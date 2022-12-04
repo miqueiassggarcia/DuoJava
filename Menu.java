@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Menu {
   public static Scanner scanInt = new Scanner(System.in);
@@ -152,7 +153,9 @@ public class Menu {
     return escolha;
   }
 
-  public void inicio() {
+  public ArrayList<String> inicio() {
+    ArrayList<String> user = new ArrayList<String>();
+
     int escolha = 0;
     while(escolha < 1 || escolha > 2) {
       System.out.println("                      DUO\n1-Login\n2-Cadastro\n");
@@ -162,34 +165,35 @@ public class Menu {
     if (escolha == 1) {
       System.out.println("Digite o nome:");
       String nome = scanString.nextLine();
+      user.add(nome);
+
       System.out.println("Digite o email:");
       String email = scanString.nextLine();
+      user.add(email);
+
       System.out.println("Digite o seu genero:");
       String genero = scanString.nextLine();
+      user.add(genero);
+
       System.out.println("Digite a sua senha:");
       String senha = scanString.nextLine();
+      user.add(senha);
 
-      System.out.println("Selecione seus jogos: ");
-      System.out.println("1-Valorant");
-      System.out.println("2-League of legends");
-      System.out.println("3-Dama");
-      int escolhaJogo = scanInt.nextInt();
+      System.out.println("Adicione uma foto:");
+      String foto = scanString.nextLine();
+      user.add(foto);
 
-      System.out.println("Selecione suas preferencias: ");
-      System.out.println("1-Rock");
-      System.out.println("2-K-pop nordestino");
-      System.out.println("3-Forró japonês");
-      int escolhaTag = scanInt.nextInt();
-
-      
+      return user;
     } else {
       System.out.println("Digite o email:");
       String email = scanString.nextLine();
+      user.add(email);
+
       System.out.println("Digite a sua senha:");
       String senha = scanString.nextLine();
+      user.add(senha);
 
-      System.out.println(email);
-      System.out.println(senha);
+      return user;
     }
   }
 }
