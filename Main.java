@@ -1,7 +1,6 @@
 import usuarios.*;
 import posts.*;
 import jogos.*;
-import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) {
@@ -14,41 +13,16 @@ public class Main {
     String ddraceId = jogos.addJogo("DDrace", "no image");
     // ######################################################
 
-    Menu menu = new Menu();
-
-    // pegando dados do usuário
-    ArrayList<String> user = menu.inicio();
     
     // criando usuarios
-    userPadraoBuilder.setName(user.get(0));
-    userPadraoBuilder.setSexo(user.get(1));
-    userPadraoBuilder.setEmail(user.get(2));
-    userPadraoBuilder.setHashSenha(user.get(3));
-    userPadraoBuilder.setLinkFoto(user.get(4));
-
-    UsuarioPadrao userPadrao = userPadraoBuilder.getUser();
-    String userPadraoId = userPadrao.getId();
+    userPadraoBuilder.setName("Gabriel");
+    userPadraoBuilder.setSexo("Indefinido");
+    userPadraoBuilder.setEmail("Seila@gmail.com");
+    userPadraoBuilder.setHashSenha("87654321");
+    userPadraoBuilder.setLinkFoto("encurtador.com.br/ioBLU");
+    UsuarioPadrao user1 = userPadraoBuilder.getUser();
+    String user1Id = user1.getId();
     userPadraoBuilder.reset();
-
-    int escolha = menu.home();
-    if (escolha == 0) {
-      menu.inicio();
-    }
-    if (escolha == 1) {
-      menu.configuracoes();
-    }
-    if (escolha == 2) {
-      menu.perfil();
-    }
-    if (escolha == 3) {
-      System.out.println("notificacoes");
-    }
-    if (escolha == 4) {
-      System.out.println("Favoritos");
-    }
-    if (escolha == 5) {
-      menu.selecionarJogo();
-    }
 
     userPadraoBuilder.setName("Helena");
     userPadraoBuilder.setSexo("Feminino");
@@ -61,38 +35,38 @@ public class Main {
     // #####################################################
 
     // adicionando tags
-    userPadrao.tags.addTag("profissional");
-    userPadrao.tags.addTag("dormir nao da XP");
-    userPadrao.tags.addTag("quem precisa viver? kkkk");
+    user1.tags.addTag("profissional");
+    user1.tags.addTag("dormir nao da XP");
+    user1.tags.addTag("quem precisa viver? kkkk");
 
-    System.out.println("Tags userPadrao: ");
-    userPadrao.tags.listarTags();
+    System.out.println("Tags user1: ");
+    user1.tags.listarTags();
     System.out.println("\n\n");
     // #####################################################
 
     // adicionando usuarios favoritos
-    userPadrao.usuariosFavoritos.addUsuarioFavorito(user2Id);
-    System.out.println("\nUsuarios favoritos do userPadrao: ");
-    userPadrao.usuariosFavoritos.listarUsuariosFavoritos();
+    user1.usuariosFavoritos.addUsuarioFavorito(user2Id);
+    System.out.println("\nUsuarios favoritos do user1: ");
+    user1.usuariosFavoritos.listarUsuariosFavoritos();
     System.out.println("\n\n");
     // ##################################################### 
 
     // adicionando jogos favoritos
-    userPadrao.jogosFavoritos.addJogoFavorito(csgoId);
-    userPadrao.jogosFavoritos.addJogoFavorito(ddraceId);
-    System.out.println("Jogos favoritos do userPadrao: ");
-    userPadrao.jogosFavoritos.listarJogosFavoritos();
+    user1.jogosFavoritos.addJogoFavorito(csgoId);
+    user1.jogosFavoritos.addJogoFavorito(ddraceId);
+    System.out.println("Jogos favoritos do user1: ");
+    user1.jogosFavoritos.listarJogosFavoritos();
     System.out.println("\n\n");
     // ######################################################
     
     // criando posts
-    String post1Id = posts.criarPost("urlImage", ddraceId, userPadraoId, "vamos duo?", "isso ai meu patrão", "linkDiscord");
-    String post2Id = posts.criarPost("urlImage", ddraceId, userPadraoId, "vamos duo2?", "descricao", "linkDiscord");
+    String post1Id = posts.criarPost("urlImage", ddraceId, user1Id, "vamos duo?", "isso ai meu patrão", "linkDiscord");
+    String post2Id = posts.criarPost("urlImage", ddraceId, user1Id, "vamos duo2?", "descricao", "linkDiscord");
     // #####################################################
 
     // listando posts
-    System.out.println("\nPosts do userPadrao");
-    posts.listarPostsUser(userPadraoId);
+    System.out.println("\nPosts do User1");
+    posts.listarPostsUser(user1Id);
 
     System.out.println("\nPosts DDrace");
     posts.listarPostsJogo(ddraceId);
@@ -104,22 +78,22 @@ public class Main {
     // ######################################################
 
     // listando notificacoes
-    System.out.println("\n\nNotificacoes userPadrao:\n");
-    String not1Id = userPadrao.notificacoes.criarNotificacao("nova notificacao!!");
-    String not2Id = userPadrao.notificacoes.criarNotificacao("oiiiiii eu quero jogar contigo!!!");
-    String not3Id = userPadrao.notificacoes.criarNotificacao("oi :(!!");
+    System.out.println("\n\nNotificacoes user1:\n");
+    String not1Id = user1.notificacoes.criarNotificacao("nova notificacao!!");
+    String not2Id = user1.notificacoes.criarNotificacao("oiiiiii eu quero jogar contigo!!!");
+    String not3Id = user1.notificacoes.criarNotificacao("oi :(!!");
 
-    userPadrao.notificacoes.visualizarNotificacao(not3Id);
+    user1.notificacoes.visualizarNotificacao(not3Id);
 
-    userPadrao.notificacoes.listarNotificacoes(10);
-    System.out.println("Total notificacoes: " + userPadrao.notificacoes.getTotalNotificacoes());
-    System.out.println("Total não visualizado: " + userPadrao.notificacoes.getTotalNotificacoesNV());
+    user1.notificacoes.listarNotificacoes(10);
+    System.out.println("Total notificacoes: " + user1.notificacoes.getTotalNotificacoes());
+    System.out.println("Total não visualizado: " + user1.notificacoes.getTotalNotificacoesNV());
     // #######################################################
 
 
     // excluindo a conta
-    System.out.println("\n\nExcluindo a conta userPadrao: ");
-    userPadrao.excluirConta();
+    System.out.println("\n\nExcluindo a conta user1: ");
+    user1.excluirConta();
 
     
     System.out.println("\n\ndeu tudo certo mano!!");
