@@ -4,6 +4,30 @@ import jogos.*;
 
 public class Main {
   public static void main(String[] args) {
+    Menu menu = new Menu();
+
+    menu.inicio();
+    int escolha = menu.home();
+
+    if (escolha == 0) {
+      menu.inicio();
+    }
+    if (escolha == 1) {
+      menu.configuracoes();
+    }
+    if (escolha == 2) {
+      menu.perfil();
+    }
+    if (escolha == 3) {
+      System.out.println("notificacoes");
+    }
+    if (escolha == 4) {
+      System.out.println("Favoritos");
+    }
+    if (escolha == 5) {
+      menu.selecionarJogo();
+    }
+    
     Posts posts = new Posts();
     Jogos jogos = new Jogos();
     UsuarioPadraoBuilder userPadraoBuilder = new UsuarioPadraoBuilder();
