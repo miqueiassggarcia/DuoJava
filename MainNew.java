@@ -1,9 +1,65 @@
 import usuarios.*;
 import posts.*;
 import jogos.*;
+import menu.Menu;
+
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MainNew {
+  public static Scanner scanInt = new Scanner(System.in);
+  public static Scanner scanString = new Scanner(System.in);
+
+  public void inicio() {
+    int escolha = 0;
+    while (escolha < 1 || escolha > 2) {
+      System.out.println("                      DUO\n1-Login\n2-Cadastro\n");
+      escolha = scanInt.nextInt();
+    }
+
+    if (user.size() == 5) {
+      userPadraoBuilder.setName("Gabriel");
+      userPadraoBuilder.setSexo("Indefinido");
+      userPadraoBuilder.setEmail("Seila@gmail.com");
+      userPadraoBuilder.setHashSenha("87654321");
+      userPadraoBuilder.setLinkFoto("encurtador.com.br/ioBLU");
+    }
+
+    if (escolha == 1) {
+      System.out.println("Digite o nome:");
+      String nome = scanString.nextLine();
+      user.add(nome);
+
+      System.out.println("Digite o email:");
+      String email = scanString.nextLine();
+      user.add(email);
+
+      System.out.println("Digite o seu genero:");
+      String genero = scanString.nextLine();
+      user.add(genero);
+
+      System.out.println("Digite a sua senha:");
+      String senha = scanString.nextLine();
+      user.add(senha);
+
+      System.out.println("Adicione uma foto:");
+      String foto = scanString.nextLine();
+      user.add(foto);
+
+      return user;
+    } else {
+      System.out.println("Digite o email:");
+      String email = scanString.nextLine();
+      user.add(email);
+
+      System.out.println("Digite a sua senha:");
+      String senha = scanString.nextLine();
+      user.add(senha);
+
+      return user;
+    }
+  }  
+
   public static void main(String[] args) {
     Posts posts = new Posts();
     Jogos jogos = new Jogos();
@@ -14,23 +70,16 @@ public class MainNew {
     String ddraceId = jogos.addJogo("DDrace", "no image");
     // ######################################################
 
-    Menu menu = new Menu();
-
     // pegando dados do usuário
+    Menu menu = new Menu();
     ArrayList<String> user = menu.inicio();
-    
-    // criando usuarios
-    userPadraoBuilder.setName(user.get(0));
-    userPadraoBuilder.setSexo(user.get(1));
-    userPadraoBuilder.setEmail(user.get(2));
-    userPadraoBuilder.setHashSenha(user.get(3));
-    userPadraoBuilder.setLinkFoto(user.get(4));
 
     UsuarioPadrao userPadrao = userPadraoBuilder.getUser();
     String userPadraoId = userPadrao.getId();
     userPadraoBuilder.reset();
 
     int escolha = menu.home();
+
     if (escolha == 0) {
       menu.inicio();
     }
