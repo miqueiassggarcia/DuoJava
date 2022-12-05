@@ -96,6 +96,6 @@ public class Main {
     user1.excluirConta();
 
     
-    System.out.println("\n\ndeu tudo certo mano!!");
+    System.out.println("\n\nDeu tudo certo mano, graças a Deus!!");
   }
 }
