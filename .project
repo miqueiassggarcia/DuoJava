@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<name>myartifactid</name>
+=======
+	<name>DuoJava</name>
+>>>>>>> origin/main
 =======
 	<name>DuoJava</name>
 >>>>>>> origin/main
@@ -14,6 +18,7 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<buildCommand>
 			<name>org.eclipse.m2e.core.maven2Builder</name>
@@ -37,9 +42,14 @@
 		</filter>
 	</filteredResources>
 =======
+=======
+>>>>>>> origin/main
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
 </projectDescription>
