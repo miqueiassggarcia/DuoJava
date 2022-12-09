@@ -1,3 +1,11 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+/**
+ *
+ * @author MDI
+ */
 import usuarios.*;
 import posts.*;
 import jogos.*;
