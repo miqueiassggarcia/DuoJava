@@ -47,6 +47,7 @@ abstract class Usuario {
   public String getLinkFoto() { return this.linkFoto; }
   public boolean getAdmin() { return this.admin; }
   public String getId() { return this.id; }
+  public String getHash() { return this.hashSenha; }
 
   public void setName(String newName) { this.name = newName; }
   public void setSexo(String ns) { this.sexo = ns; }

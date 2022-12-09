@@ -9,9 +9,16 @@
 import usuarios.*;
 import posts.*;
 import jogos.*;
+import views.Cadastro;
+import views.Inicio;
 
 public class Main {
   public static void main(String[] args) {
+    Inicio inicio = new Inicio();
+    
+    inicio.setVisible(true);
+    
+    
     Posts posts = new Posts();
     Jogos jogos = new Jogos();
     UsuarioPadraoBuilder userPadraoBuilder = new UsuarioPadraoBuilder();

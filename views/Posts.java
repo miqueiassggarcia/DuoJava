@@ -1,4 +1,4 @@
-package com.mycompany.main.views;
+package views;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -37,24 +37,20 @@ public class Posts extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jButton1.setText("Criar post");
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel1.setText("Posts");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Java projects\\Main\\src\\main\\java\\com\\mycompany\\main\\Imagens\\DUO-18.png")); // NOI18N
         jLabel3.setText("jLabel3");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("User666");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Java projects\\Main\\src\\main\\java\\com\\mycompany\\main\\Imagens\\baseline_account_circle_black_24dp.png")); // NOI18N
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Java projects\\Main\\src\\main\\java\\com\\mycompany\\main\\Imagens\\baseline_favorite_border_black_24dp.png")); // NOI18N
         jLabel4.setText("jLabel4");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Java projects\\Main\\src\\main\\java\\com\\mycompany\\main\\Imagens\\baseline_send_black_24dp.png")); // NOI18N
         jLabel6.setText("jLabel6");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
