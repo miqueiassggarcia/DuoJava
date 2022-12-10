@@ -69,7 +69,7 @@ public class Main {
     user1.tags.addTag("quem precisa viver? kkkk");
 
     // Mostrando resultado da inserção
-    System.out.println("Tags user1: ");
+    System.out.println("\n\n\n\nTags user1: ");
     user1.tags.listarTags();
     System.out.println("\n\n");
     // ##############################################
