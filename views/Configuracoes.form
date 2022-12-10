@@ -34,9 +34,7 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="radioOutro" min="-2" pref="98" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel3" min="-2" pref="37" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" pref="37" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="37" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                       <Component id="txtEmail" alignment="0" max="32767" attributes="0"/>
                       <Component id="txtNome" alignment="0" min="-2" pref="306" max="-2" attributes="0"/>
@@ -49,6 +47,8 @@
                       </Group>
                       <Component id="txtSenha" alignment="0" min="-2" pref="304" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jLabel3" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="0" min="-2" pref="53" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
           </Group>
