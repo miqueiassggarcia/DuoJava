@@ -38,7 +38,7 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        txtNome = new javax.swing.JTextField();
+        txtEmail = new javax.swing.JTextField();
         txtSenha = new javax.swing.JTextField();
         buttonEntrar = new javax.swing.JButton();
 
@@ -48,9 +48,15 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel1.setText("Login");
 
-        jLabel2.setText("Nome");
+        jLabel2.setText("Email");
 
         jLabel3.setText("Senha");
+
+        txtEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEmailActionPerformed(evt);
+            }
+        });
 
         buttonEntrar.setText("Entrar");
         buttonEntrar.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +78,7 @@ public class Login extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jLabel3)
                                 .addComponent(jLabel2)
-                                .addComponent(txtNome)
+                                .addComponent(txtEmail)
                                 .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(150, 150, 150)
@@ -87,7 +93,7 @@ public class Login extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -125,11 +131,15 @@ public class Login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_buttonEntrarActionPerformed
 
+    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEmailActionPerformed
+
     private boolean login() {
-        String nome = txtNome.getText();
+        String email = txtEmail.getText();
         String senha = txtSenha.getText();
         
-        if(this.user.getName().equals(nome) && this.user.getHash().equals(senha)) {
+        if(this.user.getEmail().equals(email) && this.user.getHash().equals(senha)) {
             return true;
         } else {
             return false;
@@ -177,7 +187,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField txtNome;
+    private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtSenha;
     // End of variables declaration//GEN-END:variables
 }
