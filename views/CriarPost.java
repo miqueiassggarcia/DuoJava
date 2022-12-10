@@ -10,7 +10,7 @@ import usuarios.UsuarioPadrao;
 
 /**
  *
- * @author MDI
+ * @author Miqueias
  */
 public class CriarPost extends javax.swing.JFrame {
     private UsuarioPadrao user;

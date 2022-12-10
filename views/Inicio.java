@@ -7,7 +7,7 @@ package views;
 
 /**
  *
- * @author mique
+ * @author Miqueias
  */
 public class Inicio extends javax.swing.JFrame {
 

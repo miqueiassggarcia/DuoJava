@@ -9,7 +9,7 @@ import usuarios.UsuarioPadrao;
 
 /**
  *
- * @author mique
+ * @author Miqueias
  */
 public class Post extends javax.swing.JFrame {
     private UsuarioPadrao user;

@@ -9,7 +9,7 @@ import usuarios.UsuarioPadrao;
 
 /**
  *
- * @author MDI
+ * @author Miqueias
  */
 public class Login extends javax.swing.JFrame {
     private UsuarioPadrao user;

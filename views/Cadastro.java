@@ -1,19 +1,16 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+* Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+* Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+*/
 package views;
 
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import usuarios.UsuarioPadrao;
 
 import usuarios.UsuarioPadraoBuilder;
 
 /**
  *
- * @author MDI
+ * @author Miqueias
  */
 public class Cadastro extends javax.swing.JFrame {
 
