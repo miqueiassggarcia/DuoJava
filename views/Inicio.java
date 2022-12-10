@@ -51,7 +51,7 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel3.setText("Faça o seu cadastro para começar");
+        jLabel3.setText("Faca o seu cadastro para comecar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

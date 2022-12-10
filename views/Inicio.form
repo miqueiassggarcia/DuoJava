@@ -111,7 +111,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Fa&#xe7;a o seu cadastro para come&#xe7;ar"/>
+            <Property name="text" type="java.lang.String" value="Faca o seu cadastro para comecar"/>
           </Properties>
         </Component>
       </SubComponents>

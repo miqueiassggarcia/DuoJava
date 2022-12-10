@@ -127,7 +127,7 @@ public class Login extends javax.swing.JFrame {
             Home home = new Home(this.user);
             home.setVisible(true);
         } else {
-            JOptionPane.showMessageDialog(null, "Usuário ou senha inválido(s)");
+            JOptionPane.showMessageDialog(null, "Usuario ou senha invalido(s)");
         }
     }//GEN-LAST:event_buttonEntrarActionPerformed
 

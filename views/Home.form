@@ -128,7 +128,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="buttonConfiguracoes">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xf5;es"/>
+            <Property name="text" type="java.lang.String" value="Configuracoes"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonConfiguracoesActionPerformed"/>

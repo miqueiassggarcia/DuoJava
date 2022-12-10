@@ -53,7 +53,7 @@ public class Home extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("MEUS JOGOS");
 
-        buttonConfiguracoes.setText("Configurações");
+        buttonConfiguracoes.setText("Configuracoes");
         buttonConfiguracoes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonConfiguracoesActionPerformed(evt);

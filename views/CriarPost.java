@@ -62,9 +62,9 @@ public class CriarPost extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel1.setText("Criar post");
 
-        jLabel2.setText("Título");
+        jLabel2.setText("Titulo");
 
-        jLabel3.setText("Descrição");
+        jLabel3.setText("Descricao");
 
         jLabel4.setText("Link da imagem");
 

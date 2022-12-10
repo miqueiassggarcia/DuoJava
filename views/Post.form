@@ -149,7 +149,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="cc" red="cc" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Algu&#xe9;m pra ir x1 no DDrase"/>
+            <Property name="text" type="java.lang.String" value="Alguem pra ir x1 no DDrase"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">

@@ -109,7 +109,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Gênero");
+        jLabel5.setText("Genero");
 
         txtSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

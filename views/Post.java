@@ -65,7 +65,7 @@ public class Post extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel8.setBackground(new java.awt.Color(204, 204, 255));
-        jLabel8.setText("Alguém pra ir x1 no DDrase");
+        jLabel8.setText("Alguem pra ir x1 no DDrase");
 
         jLabel7.setText("quero ir x1 em fng para treinar arremesso nos espinhos de 10.");
 
