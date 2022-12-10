@@ -4,7 +4,7 @@
 
 /**
  *
- * @author MDI
+ * @author Miqueias
  */
 import usuarios.*;
 import posts.*;
@@ -14,6 +14,9 @@ import views.Inicio;
 
 public class Main {
   public static void main(String[] args) {
+    Testes testes = new Testes();
+    testes.testar();
+
     Inicio inicio = new Inicio();
     
     inicio.setVisible(true);
