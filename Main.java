@@ -11,6 +11,7 @@ import posts.*;
 import jogos.*;
 import views.Cadastro;
 import views.Inicio;
+import testes.*;
 
 public class Main {
   public static void main(String[] args) {
