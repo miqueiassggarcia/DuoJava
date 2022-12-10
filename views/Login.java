@@ -118,7 +118,7 @@ public class Login extends javax.swing.JFrame {
         boolean logado = login();
         if(logado) {
             this.setVisible(false);
-            Home home = new Home();
+            Home home = new Home(this.user);
             home.setVisible(true);
         } else {
             JOptionPane.showMessageDialog(null, "Usuário ou senha inválido(s)");

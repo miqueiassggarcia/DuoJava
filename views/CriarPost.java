@@ -4,17 +4,37 @@
  */
 package views;
 
+import posts.Posts;
+
+import usuarios.UsuarioPadrao;
+
 /**
  *
  * @author MDI
  */
 public class CriarPost extends javax.swing.JFrame {
-
+    private UsuarioPadrao user;
     /**
      * Creates new form CriarPost
      */
+    public CriarPost(UsuarioPadrao user) {
+        this.user = user;
+        initComponents();
+    }
+    
     public CriarPost() {
         initComponents();
+    }
+    
+    public void criarPost() {
+        String titulo = txtTitulo.getText();
+        String descricao = txtAreaDescricao.getText();
+        String linkImage = txtLinkImage.getText();
+        
+        Posts posts = new Posts();
+        
+        // Criando post
+        posts.criarPost(linkImage, "1", this.user.getId(), titulo, descricao, "discord.com");
     }
 
     /**
@@ -138,7 +158,10 @@ public class CriarPost extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonCriarPostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCriarPostActionPerformed
-        // TODO add your handling code here:
+        criarPost();
+        this.setVisible(false);
+        Post post = new Post(this.user);
+        post.setVisible(true);
     }//GEN-LAST:event_buttonCriarPostActionPerformed
 
     private void txtTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTituloActionPerformed

@@ -52,5 +52,6 @@ abstract class Usuario {
   public void setName(String newName) { this.name = newName; }
   public void setSexo(String ns) { this.sexo = ns; }
   public void setEmail(String ne) { this.email = ne; }
+  public void setHash(String ne) { this.hashSenha = ne; }
   public void setlinkFoto(String nf) { this.linkFoto = nf; }
 } 

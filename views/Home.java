@@ -1,5 +1,7 @@
 package views;
 
+import usuarios.UsuarioPadrao;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -10,10 +12,15 @@ package views;
  * @author mique
  */
 public class Home extends javax.swing.JFrame {
-
+    private UsuarioPadrao user;
     /**
      * Creates new form Home
      */
+    public Home(UsuarioPadrao user) {
+        this.user = user;
+        initComponents();
+    }
+    
     public Home() {
         initComponents();
     }
@@ -29,17 +36,16 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        buttonPerfil = new javax.swing.JButton();
-        buttonHome = new javax.swing.JButton();
-        buttonJogo1 = new javax.swing.JButton();
+        buttonConfiguracoes = new javax.swing.JButton();
+        buttonLogOut = new javax.swing.JButton();
+        buttonJogo6 = new javax.swing.JButton();
+        buttonJogo9 = new javax.swing.JButton();
         buttonJogo2 = new javax.swing.JButton();
-        buttonJogo3 = new javax.swing.JButton();
         buttonJogo4 = new javax.swing.JButton();
         buttonJogo5 = new javax.swing.JButton();
-        buttonJogo6 = new javax.swing.JButton();
+        buttonJogo3 = new javax.swing.JButton();
         buttonJogo7 = new javax.swing.JButton();
-        buttonJogo8 = new javax.swing.JButton();
-        buttonLogOut = new javax.swing.JButton();
+        buttonJogo10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -47,102 +53,133 @@ public class Home extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("MEUS JOGOS");
 
-        buttonPerfil.setText("Perfil");
-
-        buttonHome.setText("Home");
-        buttonHome.addActionListener(new java.awt.event.ActionListener() {
+        buttonConfiguracoes.setText("Configurações");
+        buttonConfiguracoes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonHomeActionPerformed(evt);
+                buttonConfiguracoesActionPerformed(evt);
             }
         });
 
-        buttonJogo1.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Main\\src\\main\\java\\Imagens\\Rectangle 4.png")); // NOI18N
+        buttonLogOut.setText("Log Out");
+        buttonLogOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonLogOutActionPerformed(evt);
+            }
+        });
 
-        buttonJogo2.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Main\\src\\main\\java\\Imagens\\Rectangle 5.png")); // NOI18N
-
-        buttonJogo3.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Main\\src\\main\\java\\Imagens\\Rectangle 6.png")); // NOI18N
-
-        buttonJogo4.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Main\\src\\main\\java\\Imagens\\Rectangle 7.png")); // NOI18N
-
-        buttonJogo5.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Main\\src\\main\\java\\Imagens\\Rectangle 8.png")); // NOI18N
-
-        buttonJogo6.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Main\\src\\main\\java\\Imagens\\Rectangle 9.png")); // NOI18N
+        buttonJogo6.setText("Farm Heroes");
         buttonJogo6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonJogo6ActionPerformed(evt);
             }
         });
 
-        buttonJogo7.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Main\\src\\main\\java\\Imagens\\Rectangle 10.png")); // NOI18N
-
-        buttonJogo8.setIcon(new javax.swing.ImageIcon("C:\\Users\\MDI\\Faculdade\\Main\\src\\main\\java\\Imagens\\Rectangle 12.png")); // NOI18N
-        buttonJogo8.addActionListener(new java.awt.event.ActionListener() {
+        buttonJogo9.setText("Dota 2");
+        buttonJogo9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonJogo8ActionPerformed(evt);
+                buttonJogo9ActionPerformed(evt);
             }
         });
 
-        buttonLogOut.setText("Log Out");
+        buttonJogo2.setText("GTA V");
+        buttonJogo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonJogo2ActionPerformed(evt);
+            }
+        });
+
+        buttonJogo4.setText("LOL");
+        buttonJogo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonJogo4ActionPerformed(evt);
+            }
+        });
+
+        buttonJogo5.setText("Clash Of Clans");
+        buttonJogo5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonJogo5ActionPerformed(evt);
+            }
+        });
+
+        buttonJogo3.setText("Shadow Of The Colossus");
+        buttonJogo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonJogo3ActionPerformed(evt);
+            }
+        });
+
+        buttonJogo7.setText("Elder Ring");
+        buttonJogo7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonJogo7ActionPerformed(evt);
+            }
+        });
+
+        buttonJogo10.setText("Fobia");
+        buttonJogo10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonJogo10ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(buttonHome)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(buttonLogOut)
-                        .addGap(41, 41, 41)
-                        .addComponent(buttonPerfil))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(buttonJogo5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(buttonJogo6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(buttonJogo7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(buttonJogo8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(49, 49, 49)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(buttonLogOut)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(buttonConfiguracoes))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(buttonJogo1)
+                                .addComponent(buttonJogo5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(buttonJogo6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(buttonJogo7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(buttonJogo10))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(buttonJogo9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(buttonJogo2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buttonJogo3))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(20, 20, 20)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(buttonJogo4)))
-                .addContainerGap(51, Short.MAX_VALUE))
+                                .addComponent(buttonJogo3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(buttonJogo4))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(185, 185, 185)
+                        .addComponent(jLabel1)))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonPerfil)
-                    .addComponent(buttonHome)
+                    .addComponent(buttonConfiguracoes)
                     .addComponent(buttonLogOut))
-                .addGap(29, 29, 29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(buttonJogo1)
-                    .addComponent(buttonJogo2)
+                .addGap(39, 39, 39)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonJogo4)
-                    .addComponent(buttonJogo3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(buttonJogo3)
+                    .addComponent(buttonJogo9)
+                    .addComponent(buttonJogo2))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(buttonJogo6)
-                    .addComponent(buttonJogo7)
-                    .addComponent(buttonJogo8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonJogo5))
-                .addGap(21, 21, 21))
+                    .addComponent(buttonJogo7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(buttonJogo5)
+                        .addComponent(buttonJogo10)
+                        .addComponent(buttonJogo6)))
+                .addGap(48, 48, 48))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -159,23 +196,71 @@ public class Home extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(25, 25, 25))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonJogo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo6ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        Post posts = new Post(this.user);
+        posts.setVisible(true);
     }//GEN-LAST:event_buttonJogo6ActionPerformed
 
-    private void buttonJogo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonJogo8ActionPerformed
+    private void buttonJogo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo2ActionPerformed
+        this.setVisible(false);
+        Post posts = new Post(this.user);
+        posts.setVisible(true);
+    }//GEN-LAST:event_buttonJogo2ActionPerformed
 
-    private void buttonHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonHomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonHomeActionPerformed
+    private void buttonJogo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo4ActionPerformed
+        this.setVisible(false);
+        Post posts = new Post(this.user);
+        posts.setVisible(true);
+    }//GEN-LAST:event_buttonJogo4ActionPerformed
+
+    private void buttonJogo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo9ActionPerformed
+        this.setVisible(false);
+        Post posts = new Post(this.user);
+        posts.setVisible(true);
+    }//GEN-LAST:event_buttonJogo9ActionPerformed
+
+    private void buttonJogo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo3ActionPerformed
+        this.setVisible(false);
+        Post posts = new Post(this.user);
+        posts.setVisible(true);
+    }//GEN-LAST:event_buttonJogo3ActionPerformed
+
+    private void buttonJogo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo5ActionPerformed
+        this.setVisible(false);
+        Post posts = new Post(this.user);
+        posts.setVisible(true);
+    }//GEN-LAST:event_buttonJogo5ActionPerformed
+
+    private void buttonJogo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo7ActionPerformed
+        this.setVisible(false);
+        Post posts = new Post(this.user);
+        posts.setVisible(true);
+    }//GEN-LAST:event_buttonJogo7ActionPerformed
+
+    private void buttonJogo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonJogo10ActionPerformed
+        this.setVisible(false);
+        Post posts = new Post(this.user);
+        posts.setVisible(true);
+    }//GEN-LAST:event_buttonJogo10ActionPerformed
+
+    private void buttonLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLogOutActionPerformed
+        this.setVisible(false);
+        Inicio inicio = new Inicio();
+        inicio.setVisible(true);
+    }//GEN-LAST:event_buttonLogOutActionPerformed
+
+    private void buttonConfiguracoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConfiguracoesActionPerformed
+        this.setVisible(false);
+        Configuracoes configuracoes = new Configuracoes(this.user);
+        configuracoes.setVisible(true);
+    }//GEN-LAST:event_buttonConfiguracoesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -213,17 +298,16 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonHome;
-    private javax.swing.JButton buttonJogo1;
+    private javax.swing.JButton buttonConfiguracoes;
+    private javax.swing.JButton buttonJogo10;
     private javax.swing.JButton buttonJogo2;
     private javax.swing.JButton buttonJogo3;
     private javax.swing.JButton buttonJogo4;
     private javax.swing.JButton buttonJogo5;
     private javax.swing.JButton buttonJogo6;
     private javax.swing.JButton buttonJogo7;
-    private javax.swing.JButton buttonJogo8;
+    private javax.swing.JButton buttonJogo9;
     private javax.swing.JButton buttonLogOut;
-    private javax.swing.JButton buttonPerfil;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
